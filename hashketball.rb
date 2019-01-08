@@ -138,5 +138,14 @@ end
  # if player[:player_name] == largest_shoe
  # return player[:rebounds]
 
-  
+
+def find_assists(game_hash)
+assist_arr = []
+game_hash.each do |key,value|
+  if value[:player_name][:assists] > 5 
+    assist_arr << value[:player_name][:assists]
+  end
+end
+assist_arr
+end
       
