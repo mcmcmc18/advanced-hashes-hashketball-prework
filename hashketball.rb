@@ -71,6 +71,7 @@ def team_colors(team_name)
 end
 end
 
+<<<<<<< HEAD
 def team_names()
 	team_names_array = []
 	game_hash.each { |location, team_data| team_names_array.push(team_data[:team_name]) }
@@ -98,6 +99,15 @@ def player_stats(player_name)
 		end
 	end
 end
+=======
+def team_names(game_hash)
+  team_name_array = []
+  game_hash.each do |team, team_data|
+  team_name_array << team_data[:team_name]
+  team_name_array
+    end
+  end
+>>>>>>> e0e2ac49d329162cf452065611bd380b869f40c0
 
 
 def big_shoe_rebounds
