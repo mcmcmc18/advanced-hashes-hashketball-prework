@@ -149,7 +149,7 @@ end
 assist_arr
 end
       
-  all_players = game_hash[:home][:players] + [:away][:players]
+  all_players = game_hash[:home][:players] + game_hash[:away][:players]
 
 def find_assists(all_players)
   assist_arr =[]
