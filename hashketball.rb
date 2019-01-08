@@ -151,7 +151,7 @@ end
       
   all_players = game_hash[:home][:players] + [:away][:players]
 
-def find_assists(game_hash)
+def find_assists(all_players)
   assist_arr =[]
   all_players.select do |player_hash|
     if player_hash[:assists] > 5 
