@@ -148,8 +148,10 @@ game_hash.each do |key,value|
 end
 assist_arr
 end
-      
+   
+   def all_players   
   all_players = game_hash[:home][:players] + game_hash[:away][:players]
+end
 
 def find_assists(all_players)
   assist_arr =[]
